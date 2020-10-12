@@ -76,7 +76,10 @@ nav {
 .pricing-table {
   text-align: center; }
 
-/* Each pricing-item*/
+.pricing-heading {
+  text-align: center; }
+
+/* Each pricing-item, I copied this code from online to learn how to make pricing charts, if this isn't allowed, please let me know.*/
 .pricing-item {
   border-radius: 3px;
   display: inline-block;
@@ -100,12 +103,12 @@ nav {
     color: white;
     display: block;
     position: relative;
-    background: #0074D9;
+    background: #49DA32;
     padding: 7px;
     font-weight: bold;
     font-size: 20px; }
   .pricing-item.pricing-featured .pricing-title {
-    background: #FF4136; }
+    background: #142B04; }
 
 /* pricing-value */
 .pricing-value {
@@ -126,12 +129,12 @@ nav {
   font-size: 16px; }
 
 .pricing-item .pricing-value {
-  background: #0074D9;
-  border: 2px solid #0074D9; }
+  background: #49DA32;
+  border: 2px solid #49DA32; }
 
 .pricing-item.pricing-featured .pricing-value {
-  background: #FF4136;
-  border: 2px solid #FF4136; }
+  background: #142B04;
+  border: 2px solid #142B04; }
 
 /* List */
 .pricing-item .pricing-features {
@@ -158,8 +161,8 @@ nav {
   line-height: 32px;
   margin: 0 auto;
   background: #fff;
-  color: #0074D9;
-  border: 2px solid #0074D9;
+  color: #49DA32;
+  border: 2px solid #49DA32;
   cursor: pointer;
   margin-bottom: 10px;
   -webkit-transition: .2s ease-out;
@@ -170,17 +173,17 @@ nav {
   /*-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.05);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.05);*/ }
   .button:hover {
-    background: #0074D9;
+    background: #49DA32;
     color: #fff;
     border: none;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
 .pricing-item.pricing-featured .button {
-  color: #FF4136;
-  border: 2px solid #FF4136; }
+  color: #142B04;
+  border: 2px solid #142B04; }
   .pricing-item.pricing-featured .button:hover {
-    background: #FF4136;
+    background: #142B04;
     color: #fff; }
 
 .selected {
@@ -206,6 +209,51 @@ nav {
   background-color: black;
   color: #ffffff; }
 
+.container-wrapper.contact .rightsection {
+  justify-content: center;
+  background: #f1f1f1; }
+
+.subheading {
+  font-weight: bold; }
+
+.container .leftsection > h1 {
+  padding: 40px; }
+
+.container-wrapper.login .rightsection {
+  justify-content: center;
+  background: #f1f1f1; }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+button {
+  background-color: #49DA32;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%; }
+
+button:hover {
+  opacity: 0.8; }
+
+.login-container {
+  padding: 16px; }
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none; }
+  .cancelbtn {
+    width: 100%; } }
+
 #footer {
   background-color: #222629;
   padding: 0 20px;
@@ -219,3 +267,25 @@ footer {
   align-items: center; }
   footer p {
     color: #fff; }
+
+input[type=text], input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f5f3f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Inter'; }
+
+input[type=submit] {
+  background-color: #49DA32;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #45a049; }

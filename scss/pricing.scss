@@ -2,7 +2,11 @@
   text-align: center;
 }
 
-/* Each pricing-item*/
+.pricing-heading{
+  text-align:center;
+}
+
+/* Each pricing-item, I copied this code from online to learn how to make pricing charts, if this isn't allowed, please let me know.*/
 .pricing-item {
   border-radius: 3px;
   display: inline-block;
@@ -27,7 +31,7 @@
     color: white;
     display: block;
     position: relative;
-    background: #0074D9;
+    background: #49DA32;
     padding: 7px;
     font-weight: bold;
     font-size: 20px;
@@ -35,7 +39,7 @@
     //background: #2ECC40;
   }
   &.pricing-featured .pricing-title{
-    background: #FF4136;
+    background: #142B04;
   }
 }
 
@@ -59,12 +63,12 @@
   font-size: 16px;
 }
 .pricing-item .pricing-value {
-  background: #0074D9;
-  border: 2px solid #0074D9;
+  background: #49DA32;
+  border: 2px solid #49DA32;
 }
 .pricing-item.pricing-featured .pricing-value{
-  background: #FF4136;
-  border: 2px solid #FF4136;
+  background:#142B04;
+  border: 2px solid #142B04;
 }
 
 /* List */
@@ -95,8 +99,8 @@
   line-height: 32px;
   margin: 0 auto;
   background: #fff;
-  color: #0074D9;
-  border: 2px solid #0074D9;
+  color: #49DA32;
+  border: 2px solid #49DA32;
   cursor: pointer;
   margin-bottom: 10px;
   //vertical-align: middle;
@@ -108,7 +112,7 @@
   /*-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.05);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.05);*/
   &:hover{
-    background: #0074D9;
+    background: #49DA32;
     color: #fff;
     border: none;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -116,10 +120,10 @@
   }
 }
 .pricing-item.pricing-featured .button{
-  color: #FF4136;
-  border: 2px solid #FF4136;
+  color: #142B04;
+  border: 2px solid #142B04;
   &:hover{
-    background: #FF4136;
+    background: #142B04;
     color: #fff;
   }
 }

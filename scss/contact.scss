@@ -1,0 +1,16 @@
+.container-wrapper {
+  &.contact {
+      .rightsection {
+          justify-content: center;
+          background: #f1f1f1;
+      }
+  }
+}
+.subheading{
+    font-weight:bold;
+}
+
+.container .leftsection > h1{
+  padding:40px;
+
+}
